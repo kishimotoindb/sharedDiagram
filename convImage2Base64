@@ -1,0 +1,6 @@
+import base64
+import sys
+f=open(sys.argv[0],'rb')
+encode=base64.b64encode(f.read())
+f.close
+print(encode)
